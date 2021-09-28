@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>CS50 Homepage</title>
+        
+        <script>
+          document.addEventListener('DOMContentLoaded',function(){
+              let correct = document.querySelector('.correct');
+              correct.addEventListener('click', function(){
+                  correct.style.backgroundColor = '#50d97e';
+                  document.querySelector('#answer1').innerHTML = 'Correct!';
+              });
+              let incorrects = document.querySelectorAll('.incorrect');
+                for(let i = 0; i < incorrects.length; i++){
+                    incorrects[i].addEventListener('click', function(){
+                    incorrects[i].style.backgroundColor = '#ff3a4e';
+                    document.querySelector('#answer1').innerHTML = 'Incorrect';
+                });
+              }
+              
+              let correct1 = document.querySelector('.correct1');
+              correct1.addEventListener('click', function(){
+                  correct1.style.backgroundColor = '#50d97e';
+                  document.querySelector('#answer2').innerHTML = 'Correct!';
+              });
+              let incorrects1 = document.querySelectorAll('.incorrect1');
+                for(let i = 0; i < incorrects1.length; i++){
+                    incorrects1[i].addEventListener('click', function(){
+                    incorrects1[i].style.backgroundColor = '#ff3a4e';
+                    document.querySelector('#answer2').innerHTML = 'Incorrect';
+                });
+              }
+              
+              let correct2 = document.querySelector('.correct2');
+              correct2.addEventListener('click', function(){
+                  correct2.style.backgroundColor = '#50d97e';
+                  document.querySelector('#answer3').innerHTML = 'Correct!';
+              });
+              let incorrects2 = document.querySelectorAll('.incorrect2');
+                for(let i = 0; i < incorrects2.length; i++){
+                    incorrects2[i].addEventListener('click', function(){
+                    incorrects2[i].style.backgroundColor = '#ff3a4e';
+                    document.querySelector('#answer3').innerHTML = 'Incorrect';
+                });
+              }
+          });
+        </script>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">CS50 Homepage Assignment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chart.html">Chart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="image.html">Images</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="search.html">Search</a>
+      </li>
+      </ul>
+    </div>
+    </nav>
+
+    <div class="section">
+      <h2>Navigate through the tabs of this website and answer the following questions!</h2>
+      <hr>
+
+      <h3>What data does the pie chart on this website display?</h3>
+      <button class = "incorrect">Scores for a Math Test</button>
+      <button class = "incorrect">People's Favorite Sport</button>
+      <button class = "correct">People's Favorite Pizza Toppings</button>
+      <button class = "incorrect">Number of Pets People Have</button>
+
+      <p id = "answer1"></p>
+      
+      <h3>What photos are displayed on the image page of this site?</h3>
+      <button class = "incorrect1">Photos of Cats</button>
+      <button class = "incorrect1">Photos of Lions</button>
+      <button class = "incorrect1">Photos of Fish</button>
+      <button class = "correct1">Photos of Dogs</button>   
+            
+      <p id = "answer2"></p>
+                
+      <h3>Which search engine does the search tab use?</h3>
+      <button class = "incorrect2">Bing</button>
+      <button class = "correct2">Google</button>
+      <button class = "incorrect2">Yahoo</button>   
+            
+      <p id = "answer3"></p>
+      
+    </div>
+    </body>
+</html>
