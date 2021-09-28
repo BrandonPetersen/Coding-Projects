@@ -1,0 +1,17 @@
+sort1 uses: bubble sort
+
+How do you know?: both merge sort and selection sort have the same O and Omega effectiveness while bubble sort does not. This means that bubble sort is far more subject to variance in its
+run times between random and reversed numbers. This algorithm displays that. Bubble sort is also really fast at sorting already sorted algorithms. This is evident with its fastest run time
+for sort1's fastest sort of sorted50000.txt.
+
+sort2 uses: merge sort
+
+How do you know?: merge sort is far more efficient sorting large sets of numbers as a result of its O(nlogn) effieciency compared with the other two algorithms O(n^2) effectiveness. Because
+of this when supplied with random text file for 50,000 numbers it is logical this alogorithm would perform the fastest. sort2 did indeed perform the fastest by a large margin for the 
+50,000 number test.
+
+sort3 uses: selection sort
+
+How do you know?: knowing that merge sort is sort2 we only need to test between sort3 and sort1 to find which is selection and which is bubble sort. For selection sort its best run time
+and worse run time are going to be the same,O and Omega are identical. With this knowledge and the fact that sort3 remains relatively consisted for both random5000 and reversed5000 sort3 
+must be selection sort.
