@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Nav+List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<style>
+  .border {
+      border: 1px solid #dee2e6!important;
+  }
+</style>
+
+<div class="container">
+  <h2>Dynamic Nav+List</h2>
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active border" id="pills-page1-tab" data-toggle="pill" data-target="#pills-page1" type="button" role="tab" aria-controls="pills-page1" aria-selected="true">Page1</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link  border" id="pills-page2-tab" data-toggle="pill" data-target="#pills-page2" type="button" role="tab" aria-controls="pills-page2" aria-selected="false">Page2</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link border" id="pills-page3-tab" data-toggle="pill" data-target="#pills-page3" type="button" role="tab" aria-controls="pills-page3" aria-selected="false">Page3</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-page1" role="tabpanel" aria-labelledby="pills-page1-tab">
+      <div class="row">
+        <div class="col-2">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-page1-1-list" data-toggle="list" href="#list-page1-1" role="tab" aria-controls="list-page1-1">Option 1</a>
+            <a class="list-group-item list-group-item-action" id="list-page1-2-list" data-toggle="list" href="#list-page1-2" role="tab" aria-controls="list-page1-2">Option 2</a>
+            <a class="list-group-item list-group-item-action" id="list-page1-3-list" data-toggle="list" href="#list-page1-3" role="tab" aria-controls="list-page1-3">Option 3</a>
+            <a class="list-group-item list-group-item-action" id="list-page1-4-list" data-toggle="list" href="#list-page1-4" role="tab" aria-controls="list-page1-4">Option 4</a>
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-page1-1" role="tabpanel" aria-labelledby="list-page1-1-list">Customizable 1</div>
+            <div class="tab-pane fade" id="list-page1-2" role="tabpanel" aria-labelledby="list-page1-2-list">Customizable 2</div>
+            <div class="tab-pane fade" id="list-page1-3" role="tabpanel" aria-labelledby="list-page1-3-list">Customizable 3</div>
+            <div class="tab-pane fade" id="list-page1-4" role="tabpanel" aria-labelledby="list-page1-4-list">Customizable 4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-page2" role="tabpanel" aria-labelledby="pills-page2-tab">
+      <div class="row">
+        <div class="col-2">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-page2-1-list" data-toggle="list" href="#list-page2-1" role="tab" aria-controls="list-page2-1">Option 1</a>
+            <a class="list-group-item list-group-item-action" id="list-page2-2-list" data-toggle="list" href="#list-page2-2" role="tab" aria-controls="list-page2-2">Option 2</a>
+            <a class="list-group-item list-group-item-action" id="list-page2-3-list" data-toggle="list" href="#list-page2-3" role="tab" aria-controls="list-page2-3">Option 3</a>
+            <a class="list-group-item list-group-item-action" id="list-page2-4-list" data-toggle="list" href="#list-page2-4" role="tab" aria-controls="list-page2-4">Option 4</a>
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-page2-1" role="tabpanel" aria-labelledby="list-page2-1-list">Customizable 5</div>
+            <div class="tab-pane fade" id="list-page2-2" role="tabpanel" aria-labelledby="list-page2-2-list">Customizable 6</div>
+            <div class="tab-pane fade" id="list-page2-3" role="tabpanel" aria-labelledby="list-page2-3-list">Customizable 7</div>
+            <div class="tab-pane fade" id="list-page2-4" role="tabpanel" aria-labelledby="list-page2-4-list">Customizable 8</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-page3" role="tabpanel" aria-labelledby="pills-page3-tab">
+      <div class="row">
+        <div class="col-2">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-page3-1-list" data-toggle="list" href="#list-page3-1" role="tab" aria-controls="list-page3-1">Option 1</a>
+            <a class="list-group-item list-group-item-action" id="list-page3-2-list" data-toggle="list" href="#list-page3-2" role="tab" aria-controls="list-page3-2">Option 2</a>
+            <a class="list-group-item list-group-item-action" id="list-page3-3-list" data-toggle="list" href="#list-page3-3" role="tab" aria-controls="list-page3-3">Option 3</a>
+            <a class="list-group-item list-group-item-action" id="list-page3-4-list" data-toggle="list" href="#list-page3-4" role="tab" aria-controls="list-page3-4">Option 4</a>
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-page3-1" role="tabpanel" aria-labelledby="list-page3-1-list">Customizable 9</div>
+            <div class="tab-pane fade" id="list-page3-2" role="tabpanel" aria-labelledby="list-page3-2-list">Customizable 10</div>
+            <div class="tab-pane fade" id="list-page3-3" role="tabpanel" aria-labelledby="list-page3-3-list">Customizable 11</div>
+            <div class="tab-pane fade" id="list-page3-4" role="tabpanel" aria-labelledby="list-page3-4-list">Customizable 12</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

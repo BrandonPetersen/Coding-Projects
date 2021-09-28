@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>MIHS FYZX</title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function(){
+                    correct.style.backgroundColor = '#50d97e';
+                    document.querySelector('#answer1').innerHTML = 'Correct!';
+                });
+                
+                let incorrects = document.querySelectorAll('.incorrect');
+                for(let i = 0; i < incorrects.length; i++){
+                        incorrects[i].addEventListener('click', function(){
+                        incorrects[i].style.backgroundColor = '#ff3a4e';
+                        document.querySelector('#answer1').innerHTML = 'Incorrect';
+                    });
+                }
+                
+                let correct1 = document.querySelector('.correct1');
+                correct1.addEventListener('click', function(){
+                    correct1.style.backgroundColor = '#50d97e';
+                    document.querySelector('#answer2').innerHTML = 'Correct!';
+                });
+                
+                let incorrects1 = document.querySelectorAll('.incorrect1');
+                for(let i = 0; i < incorrects1.length; i++){
+                        incorrects1[i].addEventListener('click', function(){
+                        incorrects1[i].style.backgroundColor = '#ff3a4e';
+                        document.querySelector('#answer2').innerHTML = 'Incorrect';
+                    });
+                }
+                
+                let correct2 = document.querySelector('.correct2');
+                correct2.addEventListener('click', function(){
+                    correct2.style.backgroundColor = '#50d97e';
+                    document.querySelector('#answer3').innerHTML = 'Correct!';
+                });
+                
+                let incorrects2 = document.querySelectorAll('.incorrect2');
+                for(let i = 0; i < incorrects2.length; i++){
+                        incorrects2[i].addEventListener('click', function(){
+                        incorrects2[i].style.backgroundColor = '#ff3a4e';
+                        document.querySelector('#answer3').innerHTML = 'Incorrect';
+                    });
+                }
+                
+                let correct3 = document.querySelector('.correct3');
+                correct3.addEventListener('click', function(){
+                    correct3.style.backgroundColor = '#50d97e';
+                    document.querySelector('#answer4').innerHTML = 'Correct!';
+                });
+                
+                let incorrects3 = document.querySelectorAll('.incorrect3');
+                for(let i = 0; i < incorrects3.length; i++){
+                        incorrects3[i].addEventListener('click', function(){
+                        incorrects3[i].style.backgroundColor = '#ff3a4e';
+                        document.querySelector('#answer4').innerHTML = 'Incorrect';
+                    });
+                }
+                
+                document.querySelector("#frq").addEventListener('click', function(){
+                    let input = document.querySelector('input');
+                    if(input.value === '9.0'){
+                        input.style.backgroundColor = '#50d97e';
+                        document.querySelector('#frq1').innerHTML = "Correct!";
+                    }
+                    else{
+                        input.style.backgroundColor = '#ff3a4e';
+                        document.querySelector('#frq1').innerHTML = "Incorrect";
+                    }
+                    
+                });
+            });
+            
+
+        </script>
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <img src="https://asset-cdn.schoology.com/system/files/imagecache/profile_reg/courselogos/logo-2850735526_60071b0b2bfbf.png?1611078411" alt = "Physics Sheep" width = "200" height = "200">
+            <h1>
+            MIHS FYZX TEST OF KNOWLEDGE
+            </h1>
+            <img src="https://asset-cdn.schoology.com/system/files/imagecache/profile_reg/courselogos/logo-2850735526_60071b0b2bfbf.png?1611078411" alt = "Physics Sheep" width = "200" height = "200">
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                
+                <h3>Question 1: A cannon is mounted on a truck that moves forward at a speed of 5 m/s. The operator wants to launch a
+                    ball from a cannon so the ball goes as far as possible before hitting the level surface. The muzzle
+                    velocity of the cannon is 50 m/s. What angle from the horizontal should the operator point the cannon?</h3>
+                <button class = "incorrect">5°</button>
+                <button class = "incorrect">41°</button>
+                <button class = "correct">45°</button>
+                <button class = "incorrect">85°</button>
+                
+                <p id = "answer1"></p>
+                
+                <h3>Question 2: A sphere, a cube, and a cylinder, all of equal mass, are released from rest from the top of a short incline.
+                    The surface of the incline is extremely slick, so much so that the objects do not rotate when released, but
+                    rather slide with negligible friction. Which reaches the base of the incline first?</h3>
+                <button class = "incorrect1">The Sphere</button>
+                <button class = "incorrect1">The Cylinder</button>
+                <button class = "incorrect1">The Cube</button>
+                <button class = "correct1">All reach the base at the same time</button>   
+            
+                <p id = "answer2"></p>
+                
+                <h3>Quesiton 3: A projectile is launched on level ground in a parabolic path so that its range would normally be 500 m.
+                    When the projectile is at the peak of its flight, the projectile breaks into two pieces of equal mass. One of
+                    these pieces falls straight down, with no further horizontal motion. How far away from the launch point
+                    does the other piece land?</h3>
+                <button class = "incorrect2">375 m</button>
+                <button class = "incorrect2">500 m</button>
+                <button class = "correct2">750 m</button>
+                <button class = "incorrect2">1000 m</button>   
+            
+                <p id = "answer3"></p>
+                
+                <h3>Quesiton 4: The Space Shuttle orbits 300 km above the Earth's surface; the Earth's radius is 6400 km. What is the
+                    acceleration due to Earth's gravity experienced by the Space Shuttle?</h3>
+                <button class = "incorrect3">4.9 m/s2</button>
+                <button class = "correct3">8.9 m/s2</button>
+                <button class = "incorrect3">9.8 m/s2</button>
+                <button class = "incorrect3">0.8 m/s2</button>  
+                
+                <p id = "answer4"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                
+                <h3>A 0.30-kg bird is flying from right to left at 30 m/s. The bird collides with and sticks to a 0.50-kg ball which
+                    is moving straight up with speed 6.0 m/s. What is the magnitude of the momentum of the ball/bird
+                    combination immediately after collision? (Type in answer to one decimal point and leave out units, example: 45.0)</h3>
+                <input type = "text"></input>
+                <button id = "frq">Check Answer</button>
+                <p id = "frq1"></p>
+                    
+                    
+            
+
+            </div>
+
+        </div>
+    </body>
+</html>
