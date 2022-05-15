@@ -1,7 +1,9 @@
 import pygame
 import sys
 import time
-
+"""
+runner.py file provided by CS50 AI course. Work in minesweeper.py was self complete.
+"""
 from minesweeper import Minesweeper, MinesweeperAI
 
 HEIGHT = 8
